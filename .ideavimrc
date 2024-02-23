@@ -51,13 +51,18 @@ nnoremap <leader>bb :action SplitVertically <CR>
 nnoremap <leader>c :action CloseContent <CR>
 
 nnoremap <leader>e :NERDTreeFocus<CR>
-nnoremap <leader>e :NERDTree<CR>
+""nnoremap <leader>e :NERDTreeFocus<CR>
 
 "" Got to file
 map <leader>ff <Action>(GotoFile)
 
 "" Git branches
 map <leader>gb <Action>(Git.Branches)
+map <leader>ga <Action>(Git.Add)
+map <leader>gc <Action>(Git.Commit)
+
+"" Zen mode
+map <leader>zz <Action>(ToggleDistractionFreeMode)
 
 "" Window navigation
 map <C-l> <Action>(NextSplitter)
